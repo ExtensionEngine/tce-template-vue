@@ -1,5 +1,7 @@
 {
-  "name": "vite-project",
+  "name": "tailor-content-element",
+  "description": "Custom content element starter template",
+  "author": "ExtensionEngine <info@extensionengine.com>",
   "private": true,
   "version": "0.0.0",
   "type": "module",
