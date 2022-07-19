@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <v-app>
     <v-app-bar>
@@ -10,12 +6,17 @@ import HelloWorld from './components/HelloWorld.vue'
     <v-main>
       <v-container>
         <v-row>
-          <v-col cols="2"></v-col>
-          <v-col cols="5"></v-col>
-          <v-col cols="5"></v-col>
+          <Sidebar />
+          <EditPreview />
+          <DisplayPreview />
         </v-row>
       </v-container>
-      <HelloWorld msg="Hello from Tailor custom element 😃"/>
     </v-main>
   </v-app>
 </template>
+
+<script setup lang="ts">
+import Sidebar from './components/Sidebar.vue';
+import EditPreview from './components/EditPreview.vue';
+import DisplayPreview from './components/DisplayPreview.vue';
+</script>
