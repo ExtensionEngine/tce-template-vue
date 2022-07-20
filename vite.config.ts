@@ -4,8 +4,9 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-	vue(),
-	vuetify({ autoImport: true }),
-]
+	root: './src/sdk/',
+	plugins: [
+		vue(),
+		vuetify({ autoImport: true }),
+	]
 })

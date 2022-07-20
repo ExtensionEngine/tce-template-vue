@@ -1,4 +1,4 @@
-import Edit from './src/content-element/edit';
+import Edit from './edit/index.vue';
 import info from './info';
 
 /**
