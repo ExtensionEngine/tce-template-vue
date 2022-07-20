@@ -2,7 +2,7 @@
     <v-col cols="5" class="background">
         <v-row class="edit-section">
             <v-col>
-                <h1>Edit section</h1>
+                <Edit/>
             </v-col>
         </v-row>
         <v-row>
@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-
+import Edit from '../../content-element/edit/index.vue'
 </script>
 
 <style scoped>

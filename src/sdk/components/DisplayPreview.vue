@@ -1,11 +1,11 @@
 <template>
     <v-col cols="5" class="background">
-        <h1>Display / Student's view</h1>
+        <Display />
     </v-col>
 </template>
 
 <script setup lang="ts">
-
+import Display from '../../content-element/display/index.vue'
 </script>
 
 <style scoped>
