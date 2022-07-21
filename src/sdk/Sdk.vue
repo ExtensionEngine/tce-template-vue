@@ -5,8 +5,7 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <v-row>
-          <Sidebar />
+        <v-row class="sdk">
           <EditPreview />
           <DisplayPreview />
         </v-row>
@@ -16,7 +15,12 @@
 </template>
 
 <script setup lang="ts">
-import Sidebar from './components/Sidebar.vue';
 import EditPreview from './components/EditPreview.vue';
 import DisplayPreview from './components/DisplayPreview.vue';
 </script>
+
+<style scoped>
+.sdk {
+  height: 100vh;
+}
+</style>

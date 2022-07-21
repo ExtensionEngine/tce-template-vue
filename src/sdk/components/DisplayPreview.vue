@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="5" class="background">
+    <v-col cols="6" class="background">
         <Display />
     </v-col>
 </template>

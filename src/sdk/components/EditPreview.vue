@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="5" class="background">
+    <v-col cols="6" class="background">
         <v-row class="edit-section">
             <v-col>
                 <Edit/>
