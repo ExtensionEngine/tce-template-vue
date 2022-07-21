@@ -8,5 +8,17 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		vuetify({ autoImport: true }),
-	]
+	],
+	build: {
+		lib: {
+			entry: '../content-element/index.ts',
+			name: 'TCE',
+			fileName: 'tce-template'
+		},
+		rollupOptions: {
+			output: {
+				dir: './dist'
+			}
+		}
+	}
 })

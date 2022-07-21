@@ -1,4 +1,5 @@
 import Edit from './edit/index.vue';
+import Display from './display/index.vue';
 import info from './info';
 
 /**
@@ -6,6 +7,7 @@ import info from './info';
  * defaults for the elements props. Does not need to be defined.
  */
 const initState = () => ({ });
+const initDisplayState = () => ({ });
 
 /**
  * The fields that need to be customized are:
@@ -20,8 +22,8 @@ export default {
   name: 'Custom element',
   initState,
   Edit,
-  // initDisplayState ??
-  // Display ??
+  initDisplayState,
+  Display,
   ui: {
     icon: 'mdi-help-circle',
     forceFullWidth: true
