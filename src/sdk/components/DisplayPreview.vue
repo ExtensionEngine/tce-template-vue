@@ -1,5 +1,6 @@
 <template>
     <v-col cols="6" class="background">
+        <h2>Display preview</h2>
         <Display />
     </v-col>
 </template>

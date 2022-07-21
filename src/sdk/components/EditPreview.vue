@@ -2,6 +2,7 @@
     <v-col cols="6" class="background">
         <v-row class="edit-section">
             <v-col>
+                <h2>Edit preview</h2>
                 <Edit/>
             </v-col>
         </v-row>
