@@ -1,4 +1,5 @@
 import Edit from './edit/index.vue';
+import Toolbar from './edit/Toolbar.vue';
 import Display from './display/index.vue';
 import info from './info';
 
@@ -22,6 +23,7 @@ export default {
   name: 'Custom element',
   initState,
   Edit,
+  Toolbar,
   initDisplayState,
   Display,
   ui: {

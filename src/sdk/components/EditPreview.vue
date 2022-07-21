@@ -6,6 +6,11 @@
                 <Edit/>
             </v-col>
         </v-row>
+         <v-row class="toolbar">
+            <v-col>
+               <Toolbar/>
+            </v-col>
+        </v-row>
         <v-row>
             <v-col>
                 <h1>Configuration section</h1>
@@ -16,6 +21,7 @@
 
 <script setup lang="ts">
 import Edit from '../../content-element/edit/index.vue'
+import Toolbar from '../../content-element/edit/Toolbar.vue';
 </script>
 
 <style scoped>
@@ -27,6 +33,12 @@ import Edit from '../../content-element/edit/index.vue'
 
 .edit-section {
     height: 50vh;
+    border-bottom: 1px white dashed;
+}
+
+.toolbar {
+    height: 5vh;
+    background-color: royalblue;
     border-bottom: 1px white dashed;
 }
 </style>
