@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@tailor-cms/core-components": "^1.0.0-beta.12",
+    "lodash": "^4.17.21",
     "roboto-fontface": "*",
     "vue": "^3.2.37",
     "vuetify": "^3.0.0-beta.0",

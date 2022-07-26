@@ -7,8 +7,8 @@ import info from './info';
  * A method used to create the initial state of the element by declaring the
  * defaults for the elements props. Does not need to be defined.
  */
-const initState = () => ({ });
-const initDisplayState = () => ({ });
+const initState = () => ({});
+const initDisplayState = () => ({});
 
 /**
  * The fields that need to be customized are:
