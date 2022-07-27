@@ -1,10 +1,10 @@
-import { createApp } from 'vue'
-import Sdk from './Sdk.vue'
-import vuetify from '../plugins/vuetify'
-import { loadFonts } from '../plugins/webfontloader'
+import { createApp } from 'vue';
+import { loadFonts } from '../plugins/webfontloader';
+import Sdk from './Sdk.vue';
+import vuetify from '../plugins/vuetify';
 
-loadFonts()
+loadFonts();
 
 createApp(Sdk)
   .use(vuetify)
-  .mount('#app')
+  .mount('#app');

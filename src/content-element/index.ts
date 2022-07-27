@@ -1,7 +1,7 @@
-import Edit from './edit/index.vue';
-import Toolbar from './edit/Toolbar.vue';
 import Display from './display/index.vue';
+import Edit from './edit/index.vue';
 import info from './info';
+import Toolbar from './edit/Toolbar.vue';
 
 /**
  * A method used to create the initial state of the element by declaring the

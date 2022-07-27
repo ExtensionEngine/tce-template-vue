@@ -6,8 +6,8 @@
     <v-main>
       <v-container>
         <v-row class="sdk">
-          <EditPreview :common-props="commonProps" @update-common="updateCommonProps"/>
-          <DisplayPreview :common-props="commonProps" @update-common="updateCommonProps"/>
+          <EditPreview @update-common="updateCommonProps" :common-props="commonProps" />
+          <DisplayPreview @update-common="updateCommonProps" :common-props="commonProps" />
         </v-row>
       </v-container>
     </v-main>
@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import EditPreview from './components/EditPreview.vue';
 import DisplayPreview from './components/DisplayPreview.vue';
+import EditPreview from './components/EditPreview.vue';
+import { ref } from 'vue';
 
 // Props shared between edit and display components
 const commonProps = ref({});
