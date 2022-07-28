@@ -1,17 +1,15 @@
-'use strict';
-
 module.exports = {
   root: true,
   env: {
-    browser: true,
+    browser: true
   },
   parserOptions: {
-    'parser': '@typescript-eslint/parser',
-    'sourceType': 'module'
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
   },
   extends: '@extensionengine',
   rules: {
-      'no-eval': 'off',
-      'vue/multi-word-component-names': 'off'
+    'no-eval': 'off',
+    'vue/multi-word-component-names': 'off'
   }
 };
