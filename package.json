@@ -1,22 +1,66 @@
 {
-  "name": "tailor-content-element",
+  "name": "@tailor-cms/tce-vue",
   "description": "Custom content element starter template",
   "author": "ExtensionEngine <info@extensionengine.com>",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/content-element.umd.cjs",
+  "module": "./dist/content-element.js",
+  "exports": {
+    ".": {
+      "import": "./dist/content-element.js",
+      "require": "./dist/content-element.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:js": "eslint --ext .js,.ts,.vue .",
+    "lint:css": "stylelint \"src/**/*.vue\" \"src/**/*.scss\" \"src/**/*.css\"",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
+  "bin": {
+    "@tailor-cms/tce-vue": "bin/index.cjs"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "@mdi/font": "5.9.55",
+    "@npmcli/package-json": "^2.0.0",
+    "chalk": "^4.1.2",
+    "enquirer": "^2.3.6",
+    "roboto-fontface": "*",
+    "shelljs": "^0.8.5",
+    "validate-npm-package-name": "^4.0.0",
+    "vue": "^3.2.37",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/eslint-plugin": "^7.18.10",
+    "@extensionengine/eslint-config": "^3.0.1",
+    "@extensionengine/stylelint-config": "^1.1.1",
+    "@types/webfontloader": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
     "@vitejs/plugin-vue": "^3.0.0",
+    "eslint": "^8.20.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-require-sort": "^1.2.2",
+    "eslint-plugin-vue": "^9.3.0",
+    "eslint-plugin-vuetify": "^1.1.0",
+    "sass": "^1.53.0",
+    "stylelint": "^14.11.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
+    "vite-plugin-vuetify": "^1.0.0-alpha.0",
+    "vue-cli-plugin-vuetify": "~2.5.1",
     "vue-tsc": "^0.38.4"
   }
 }
