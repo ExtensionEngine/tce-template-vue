@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Edit element toolbar</h3>
+    <p>Edit element top toolbar</p>
   </div>
 </template>
 

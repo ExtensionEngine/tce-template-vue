@@ -1,27 +1,42 @@
 {
-  "name": "tailor-content-element",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@tailor-cms/tce-vue",
   "description": "Custom content element starter template",
   "author": "ExtensionEngine <info@extensionengine.com>",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/content-element.umd.cjs",
+  "module": "./dist/content-element.js",
+  "exports": {
+    ".": {
+      "import": "./dist/content-element.js",
+      "require": "./dist/content-element.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.ts,.vue ."
+    "lint:js": "eslint --ext .js,.ts,.vue .",
+    "lint:css": "stylelint \"src/**/*.vue\" \"src/**/*.scss\" \"src/**/*.css\"",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
+  "bin": {
+    "@tailor-cms/tce-vue": "bin/index.cjs"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
-    "@tailor-cms/core-components": "^1.0.0-beta.12",
-    "lodash": "^4.17.21",
     "roboto-fontface": "*",
     "vue": "^3.2.37",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-plugin": "^7.17.7",
+    "@babel/eslint-plugin": "^7.18.10",
     "@extensionengine/eslint-config": "^3.0.1",
+    "@extensionengine/stylelint-config": "^1.1.1",
     "@types/webfontloader": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
@@ -36,22 +51,11 @@
     "eslint-plugin-vue": "^9.3.0",
     "eslint-plugin-vuetify": "^1.1.0",
     "sass": "^1.53.0",
+    "stylelint": "^14.11.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
     "vite-plugin-vuetify": "^1.0.0-alpha.0",
     "vue-cli-plugin-vuetify": "~2.5.1",
     "vue-tsc": "^0.38.4"
-  },
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/tce-template.umd.cjs",
-  "module": "./dist/tce-template.js",
-  "exports": {
-    ".": {
-      "import": "./dist/tce-template.js",
-      "require": "./dist/tce-template.umd.cjs"
-    }
   }
 }

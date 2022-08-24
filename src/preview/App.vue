@@ -1,0 +1,36 @@
+<template>
+  <v-app>
+    <v-app-bar>
+      <v-app-bar-title>TCE preview</v-app-bar-title>
+    </v-app-bar>
+    <v-main>
+      <v-container>
+        <v-row>
+          <EditPreview
+            @save="saveElementData"
+            @delete="deleteElementData"
+            :element-data="elementData" />
+          <DisplayPreview :element-data="elementData" />
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
+</template>
+
+<script setup lang="ts">
+import DisplayPreview from './components/DisplayPreview.vue';
+import EditPreview from './components/EditPreview.vue';
+import type { ElementData } from '../content-element/typings';
+import manifest from '../content-element/index';
+import { ref } from 'vue';
+
+const elementData = ref<ElementData>(manifest.initState());
+
+function saveElementData(data: ElementData) {
+  elementData.value = data;
+}
+
+function deleteElementData() {
+  elementData.value = {};
+}
+</script>

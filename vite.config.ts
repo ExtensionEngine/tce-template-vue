@@ -4,7 +4,7 @@ import vuetify from 'vite-plugin-vuetify';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  root: './src/sdk/',
+  root: './src/preview/',
   plugins: [
     vue(),
     vuetify({ autoImport: true })
@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       entry: '../content-element/index.ts',
       name: 'TCE',
-      fileName: 'tce-template'
+      fileName: 'content-element'
     },
     rollupOptions: {
       output: {

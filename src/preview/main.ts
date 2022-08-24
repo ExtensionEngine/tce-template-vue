@@ -1,10 +1,11 @@
+import './styles/app.scss';
+import App from './App.vue';
 import { createApp } from 'vue';
 import { loadFonts } from '../plugins/webfontloader';
-import Sdk from './Sdk.vue';
 import vuetify from '../plugins/vuetify';
 
 loadFonts();
 
-createApp(Sdk)
+createApp(App)
   .use(vuetify)
   .mount('#app');

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>This is the edit version of the content element</p>
+    <p>Edit element side toolbar</p>
   </div>
 </template>
 

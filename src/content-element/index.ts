@@ -1,14 +1,14 @@
+import type { DataInitializer, ElementManifest } from './typings';
 import Display from './display/index.vue';
 import Edit from './edit/index.vue';
-import info from './info';
-import Toolbar from './edit/Toolbar.vue';
+import SideToolbar from './edit/SideToolbar.vue';
+import TopToolbar from './edit/TopToolbar.vue';
 
 /**
  * A method used to create the initial state of the element by declaring the
  * defaults for the elements props. Does not need to be defined.
  */
-const initState = () => ({});
-const initDisplayState = () => ({});
+const initState: DataInitializer = () => ({});
 
 /**
  * The fields that need to be customized are:
@@ -18,16 +18,20 @@ const initDisplayState = () => ({});
  * ui->forceFullWidth: a boolean value which defines if the element can only be
  * added as full width element
  */
-export default {
-  ...info,
+
+const manifest: ElementManifest = {
+  type: 'CUSTOM_ELEMENT', // a unique string used by Tailor to identify this element
+  version: '1.0',
   name: 'Custom element',
   initState,
   Edit,
-  Toolbar,
-  initDisplayState,
+  TopToolbar,
+  SideToolbar,
   Display,
   ui: {
     icon: 'mdi-help-circle',
     forceFullWidth: true
   }
 };
+
+export default manifest;
