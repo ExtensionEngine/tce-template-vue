@@ -57,7 +57,6 @@
     "eslint-plugin-require-sort": "^1.2.2",
     "eslint-plugin-vue": "^9.3.0",
     "eslint-plugin-vuejs-accessibility": "^1.2.0",
-    "eslint-plugin-vuetify": "^1.1.0",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",
     "stylelint": "^14.11.0",

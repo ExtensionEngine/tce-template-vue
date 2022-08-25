@@ -100,7 +100,7 @@ async function getPackageName() {
 
 async function installDependencies() {
   shell.echo(prettifyStepTitle('\n2/4 Installing dependencies'));
-  if (shell.exec('npm install --legacy-peer-deps').code !== SUCCESS_CODE) {
+  if (shell.exec('npm install').code !== SUCCESS_CODE) {
     exitOnError('Installing dependencies via npm failed');
   }
 }
