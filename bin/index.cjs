@@ -100,7 +100,7 @@ async function getPackageName() {
 
 async function installDependencies() {
   shell.echo(prettifyStepTitle('\n2/4 Installing dependencies'));
-  if (shell.exec('npm install').code !== SUCCESS_CODE) {
+  if (shell.exec('npm install --legacy-peer-deps').code !== SUCCESS_CODE) {
     exitOnError('Installing dependencies via npm failed');
   }
 }
@@ -123,7 +123,7 @@ async function cleanup() {
       '@mdi/font': '5.9.55',
       'roboto-fontface': '*',
       vue: '^3.2.37',
-      vuetify: '^3.0.0-beta.0',
+      vuetify: '^3.0.0-beta.9',
       webfontloader: '^1.0.0'
     }
   });
