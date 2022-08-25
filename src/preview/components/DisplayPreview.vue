@@ -6,15 +6,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import Display from '../../content-element/display/index.vue';
-import type { ElementData } from '../../content-element/typings';
+import { computed } from "vue";
+import Display from "../../content-element/display/index.vue";
+import type { ElementData } from "../../content-element/typings";
 
 const props = defineProps<{
-  elementData: ElementData
+  elementData: ElementData;
 }>();
 
 const displayProps = computed(() => ({
-  ...props.elementData
+  ...props.elementData,
 }));
 </script>

@@ -7,9 +7,10 @@
       <v-container>
         <v-row>
           <EditPreview
+            :element-data="elementData"
             @save="saveElementData"
             @delete="deleteElementData"
-            :element-data="elementData" />
+          />
           <DisplayPreview :element-data="elementData" />
         </v-row>
       </v-container>
@@ -18,11 +19,11 @@
 </template>
 
 <script setup lang="ts">
-import DisplayPreview from './components/DisplayPreview.vue';
-import EditPreview from './components/EditPreview.vue';
-import type { ElementData } from '../content-element/typings';
-import manifest from '../content-element/index';
-import { ref } from 'vue';
+import DisplayPreview from "./components/DisplayPreview.vue";
+import EditPreview from "./components/EditPreview.vue";
+import type { ElementData } from "../content-element/typings";
+import manifest from "../content-element/index";
+import { ref } from "vue";
 
 const elementData = ref<ElementData>(manifest.initState());
 

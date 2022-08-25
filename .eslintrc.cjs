@@ -1,15 +1,29 @@
 module.exports = {
   root: true,
   env: {
-    browser: true
+    browser: true,
   },
   parserOptions: {
-    parser: '@typescript-eslint/parser',
-    sourceType: 'module'
+    ecmaVersion: 2022,
+    sourceType: "module",
+    parser: "@typescript-eslint/parser",
   },
-  extends: '@extensionengine',
+  extends: [
+    "standard",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:nuxt/recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended",
+    "plugin:vuejs-accessibility/recommended",
+  ],
+  plugins: ["@typescript-eslint", "vue", "vuejs-accessibility"],
   rules: {
-    'no-eval': 'off',
-    'vue/multi-word-component-names': 'off'
-  }
+    "vue/script-setup-no-uses-vars": "off",
+    "vue/multi-word-component-names": [
+      "error",
+      {
+        ignores: ["index"],
+      },
+    ],
+  },
 };

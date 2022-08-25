@@ -1,8 +1,6 @@
-import type { Component } from 'vue';
+import type { Component } from "vue";
 
-export interface ElementData {
-
-}
+export interface ElementData {}
 
 export type DataInitializer = () => ElementData;
 
@@ -18,5 +16,5 @@ export interface ElementManifest {
   ui: {
     icon: string;
     forceFullWidth: boolean;
-  }
+  };
 }

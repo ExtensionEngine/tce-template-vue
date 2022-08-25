@@ -3,10 +3,7 @@
     <v-row>
       <v-col>
         <h2 class="mb-5">Edit preview</h2>
-        <Edit
-          @save="onSave"
-          @delete="onDelete"
-          v-bind="editProps" />
+        <Edit v-bind="editProps" @save="onSave" @delete="onDelete" />
       </v-col>
     </v-row>
     <v-row>
@@ -25,27 +22,27 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import Edit from '../../content-element/edit/index.vue';
-import type { ElementData } from '../../content-element/typings';
-import SideToolbar from '../../content-element/edit/SideToolbar.vue';
-import TopToolbar from '../../content-element/edit/TopToolbar.vue';
+import { computed } from "vue";
+import Edit from "../../content-element/edit/index.vue";
+import type { ElementData } from "../../content-element/typings";
+import SideToolbar from "../../content-element/edit/SideToolbar.vue";
+import TopToolbar from "../../content-element/edit/TopToolbar.vue";
 
 const props = defineProps<{
-  elementData: ElementData
+  elementData: ElementData;
 }>();
-const emit = defineEmits(['save', 'delete']);
+const emit = defineEmits(["save", "delete"]);
 
 // Should be set based on specific component's interface
 const editProps = computed(() => ({
-  ...props.elementData
+  ...props.elementData,
 }));
 
 function onSave(data: ElementData) {
-  emit('save', data);
+  emit("save", data);
 }
 
 function onDelete() {
-  emit('delete');
+  emit("delete");
 }
 </script>
