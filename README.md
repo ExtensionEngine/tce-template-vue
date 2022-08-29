@@ -1,6 +1,6 @@
 # tce-template-vue
 
-Template project to quickly get started developing custom content elements.
+Template project to quickly get started developing content elements in Vue.
 
 > **:warning: DISCLAIMER**
 > The project is in early prototype phase. More info will be added later.
