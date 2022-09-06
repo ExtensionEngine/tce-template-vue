@@ -23,10 +23,10 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import Edit from "../../content-element/edit/index.vue";
-import type { ElementData } from "../../content-element/typings";
-import SideToolbar from "../../content-element/edit/SideToolbar.vue";
-import TopToolbar from "../../content-element/edit/TopToolbar.vue";
+import Edit from "../../packages/edit/src/components/index.vue";
+import type { ElementData } from "../../packages/types";
+import SideToolbar from "../../packages/edit/src/components/SideToolbar.vue";
+import TopToolbar from "../../packages/edit/src/components/TopToolbar.vue";
 
 const props = defineProps<{
   elementData: ElementData;

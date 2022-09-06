@@ -1,8 +1,5 @@
-import type { DataInitializer, ElementManifest } from "./typings";
-import Display from "./display/index.vue";
-import Edit from "./edit/index.vue";
-import SideToolbar from "./edit/SideToolbar.vue";
-import TopToolbar from "./edit/TopToolbar.vue";
+import type { DataInitializer, ElementManifest } from "../../types";
+import Display from "./components/index.vue";
 
 /**
  * A method used to create the initial state of the element by declaring the
@@ -24,9 +21,6 @@ const manifest: ElementManifest = {
   version: "1.0",
   name: "Custom element",
   initState,
-  Edit,
-  TopToolbar,
-  SideToolbar,
   Display,
   ui: {
     icon: "mdi-help-circle",

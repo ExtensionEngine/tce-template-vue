@@ -7,8 +7,8 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import Display from "../../content-element/display/index.vue";
-import type { ElementData } from "../../content-element/typings";
+import Display from "../../packages/display/src/components/index.vue";
+import type { ElementData } from "../../packages/types";
 
 const props = defineProps<{
   elementData: ElementData;
