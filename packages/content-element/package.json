@@ -1,0 +1,8 @@
+{
+  "name": "@tailor-cms/tce-custom-element",
+  "version": "0.0.1",
+  "description": "Content element main package for edit and display templates",
+  "author": "ExtensionEngine <info@extensionengine.com>",
+  "type": "module",
+  "main": "index.ts"
+}

@@ -7,8 +7,10 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import Display from "../../packages/display/src/components/index.vue";
-import type { ElementData } from "../../packages/types";
+import manifest from "../../packages/content-element";
+import type { ElementData } from "../../packages/content-element/types";
+
+const { Display } = manifest;
 
 const props = defineProps<{
   elementData: ElementData;
