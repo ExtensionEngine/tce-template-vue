@@ -1,11 +1,10 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import vuetify from "vite-plugin-vuetify";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   root: "./src",
-  plugins: [vue(), vuetify({ autoImport: true })],
+  plugins: [vue()],
   build: {
     lib: {
       entry: "./index.ts",
@@ -13,7 +12,7 @@ export default defineConfig({
       fileName: "content-element-display",
     },
     rollupOptions: {
-      external: ["vue", "vuetify"],
+      external: ["vue"],
       output: {
         dir: "./dist",
       },

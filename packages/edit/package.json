@@ -1,5 +1,5 @@
 {
-  "name": "@tailor-cms/tce-vue",
+  "name": "@tailor-cms/tcee-custom-element",
   "description": "Content element edit template for Vue",
   "author": "ExtensionEngine <info@extensionengine.com>",
   "version": "0.0.1",
@@ -20,16 +20,12 @@
     "lint": "eslint --ext .js,.ts,.vue ."
   },
   "peerDependencies": {
-    "@mdi/font": "5.9.55",
-    "roboto-fontface": "*",
-    "vue": "^3.2.37",
-    "vuetify": "^3.0.0-beta.9"
+    "vue": "^2.7.0"
   },
   "devDependencies": {
-    "@types/webfontloader": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
-    "@vitejs/plugin-vue": "^3.0.0",
+    "@vitejs/plugin-vue2": "^2.0.0",
     "@vue/eslint-config-standard": "^8.0.1",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
@@ -39,15 +35,12 @@
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-require-sort": "^1.2.2",
     "eslint-plugin-vue": "^9.3.0",
     "eslint-plugin-vuejs-accessibility": "^1.2.0",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
-    "vite-plugin-vuetify": "^1.0.0-alpha.0",
-    "vue-tsc": "^0.38.4",
-    "webfontloader": "^1.6.28"
+    "vue-tsc": "^0.38.4"
   }
 }
