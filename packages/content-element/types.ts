@@ -9,10 +9,10 @@ export interface ElementManifest {
   version: string;
   name: string;
   initState: DataInitializer;
-  Edit?: Component;
+  Edit: Component;
   TopToolbar?: Component;
   SideToolbar?: Component;
-  Display?: Component;
+  Display: Component;
   ui: {
     icon: string;
     forceFullWidth: boolean;
