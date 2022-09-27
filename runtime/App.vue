@@ -21,8 +21,8 @@
 <script setup lang="ts">
 import DisplayPreview from "./components/DisplayPreview.vue";
 import EditPreview from "./components/EditPreview.vue";
-import type { ElementData } from "../content-element/typings";
-import manifest from "../content-element/index";
+import type { ElementData } from "../packages/content-element/types";
+import manifest from "../packages/content-element";
 import { ref } from "vue";
 
 const elementData = ref<ElementData>(manifest.initState());

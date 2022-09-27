@@ -1,8 +1,8 @@
 import "./styles/app.scss";
 import App from "./App.vue";
 import { createApp } from "vue";
-import { loadFonts } from "../plugins/webfontloader";
-import vuetify from "../plugins/vuetify";
+import { loadFonts } from "./plugins/webfontloader";
+import vuetify from "./plugins/vuetify";
 
 loadFonts();
 

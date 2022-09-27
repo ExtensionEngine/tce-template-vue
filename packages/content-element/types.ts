@@ -10,8 +10,8 @@ export interface ElementManifest {
   name: string;
   initState: DataInitializer;
   Edit: Component;
-  TopToolbar: Component;
-  SideToolbar: Component;
+  TopToolbar?: Component;
+  SideToolbar?: Component;
   Display: Component;
   ui: {
     icon: string;
